@@ -1,7 +1,6 @@
-import { app, BrowserWindow } from "electron";
-import dotenv from "dotenv";
+const { app, BrowserWindow } = require("electron");
 
-dotenv.config();
+require("dotenv").config();
 
 function createWindow() {
   const window = new BrowserWindow({
